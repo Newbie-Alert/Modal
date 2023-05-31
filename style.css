@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hide{
+  display: none;
+}
+body {
+  background-color: rgb(218, 218, 218);
+}
+
+.modal-bg{
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7))  ,url('/img/BG.jpg');
+  background-size: 180%;
+  background-repeat: no-repeat;
+  filter: blur(1px);
+}
+
+.modal-content{
+  width: 90%;
+  max-width: 900px;
+  height: 50%;
+  border: 3px solid rgb(44, 44, 44);
+  max-height: 600px;
+  background-image: url('/img/BG.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  z-index: 1;
+}
+.fa-xmark {
+  color: aliceblue;
+  font-size: 30px;
+  color: black;
+  padding: 5px;
+  position: absolute;
+  right: -45px;
+  top: -45px;
+  cursor: pointer;
+}
+.fa-xmark:hover{
+  color: white;
+}
+
+.switch-box{
+  width: 450px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('/img/BG.jpg');
+  background-size: 120%;
+  border: 3px solid #fff;
+  color: white;
+  text-align: center;
+  padding: 9px;
+  border-radius: 9px;
+  box-shadow: 12px 9px 3px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contents{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.contents h1{
+  font-size: 36px;
+}
+
+.switch-box-btn{
+  margin-top: 27px;
+  padding: 9px;
+}
+
+.switch-box-btn button{
+  padding: 12px;
+  width: 210px;
+  border-radius: 5px;
+  font-size: 21px;
+  border: 2px solid rgb(255, 255, 255);
+  background: none;
+  color: #fff;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+.switch-box-btn button:hover{
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+@media(max-width:768px){
+  .switch-box{
+    width: 85%;
+    height: 25%;
+  }
+  .fa-xmark{
+    display: hidden;
+  }
+  .modal-bg{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .modal-content{
+    background-size: cover;
+  }
+  .fa-solid{
+    visibility: hidden;
+  }
+}
