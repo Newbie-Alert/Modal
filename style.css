@@ -55,7 +55,7 @@ body {
   width: 450px;
   height: 300px;
   background: rgba(0, 0, 0, 0.5);
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('/img/BG.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('./img/BG.jpg');
   background-size: 120%;
   border: 3px solid #fff;
   color: white;
