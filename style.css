@@ -14,7 +14,7 @@ body {
 .modal-bg{
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7))  ,url('/img/BG.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7))  ,url('./img/BG.jpg');
   background-size: 180%;
   background-repeat: no-repeat;
   filter: blur(1px);
@@ -26,7 +26,7 @@ body {
   height: 50%;
   border: 3px solid rgb(44, 44, 44);
   max-height: 600px;
-  background-image: url('/img/BG.jpg');
+  background-image: url('./img/BG.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
